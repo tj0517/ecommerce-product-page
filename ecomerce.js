@@ -10,7 +10,7 @@ var nr_zdj=1;
 var z=1;
 function zdj(nr)
 {
-$("#main_photo").attr("src","images/image-product-"+nr+".jpg")
+$("#main_photo").attr("src","image-product-"+nr+".jpg")
 $("#p"+nr).css({
 "opacity" :"50%",
 "border" : "orange 3px solid"   
@@ -26,7 +26,7 @@ function open()
 {
 $("#photo_zoom").css("display","block");
 $("#maska").css("display","block"); 
-$("#main_photo2").attr("src","images/image-product-"+z+".jpg")
+$("#main_photo2").attr("src","image-product-"+z+".jpg")
 $(".p").css({
     "opacity" :"100%",
     "border" : "none"  
@@ -41,7 +41,7 @@ if(nr==1)
     {
     z=4;    
     }
-    $("#main_photo2").attr("src","images/image-product-"+z+".jpg")    
+    $("#main_photo2").attr("src","image-product-"+z+".jpg")    
 }
 if(nr==2)
 {
@@ -50,14 +50,14 @@ if(nr==2)
     {
     z=1;    
     }
-    $("#main_photo2").attr("src","images/image-product-"+z+".jpg")    
+    $("#main_photo2").attr("src","image-product-"+z+".jpg")    
 }
 }
 function closee()
 {
     $("#photo_zoom").css("display","none");
     $("#maska").css("display","none");   
-    $("#main_photo").attr("src","images/image-product-"+z+".jpg")  
+    $("#main_photo").attr("src","image-product-"+z+".jpg")  
     $("#p"+z).css({
         "opacity" :"50%",
         "border" : "orange 3px solid"   
